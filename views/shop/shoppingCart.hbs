@@ -1,0 +1,59 @@
+<link rel="icon" type="image/png" href="signup/images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="signup/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="signup/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="signup/fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="signup/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="signup/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="signup/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="signup/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="signup/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="signup/css/util.css">
+	<link rel="stylesheet" type="text/css" href="signup/css/main.css">
+
+
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('signup/images/shopping.jpg');">
+    	<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+            <span class="login100-form-title p-b-40">
+				CART DETAILS
+			</span>
+{{# if products }}
+    <div class="row">
+        <div class="col-sm-10 col-md-10 col-md-offset-3 col-sm-offset-3">
+            <ul class="list-group">
+                {{# each products }}
+                    <li class="list-group-item">
+                        <span class="badge">{{ this.qty }}</span>
+                        <strong style="font-size: 10px">{{ this.item.title }}</strong>
+                        <span class="label label-success" style="font-size: 10px">INR {{ this.price }}</span>
+                            <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Action </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/reduce/{{this.item._id}}">Reduce by 1</a></li>
+                                <li><a href="/remove/{{this.item._id}}">Remove All</a></li>
+                            </ul>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+            <strong style="font-size: 20px">Total: {{ totalPrice }}</strong>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+            <a href="/selectOpt" type="button" class="btn btn-success">Checkout</a>
+        </div>
+    </div>
+{{ else }}
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+            <h2>No items in the cart</h2>
+        </div>
+    </div>
+{{/if}}
+</div>
+</div>
+</div>

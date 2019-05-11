@@ -1,0 +1,54 @@
+.thumbnail img
+{
+    max-height: 150px;
+  max-width: 70% ;
+  margin-left: 50px ;
+  margin-top: 10px ;
+    
+}
+.thumbnail .description
+{
+  color: #254114;
+  font-weight: bolder;
+  text-align: justify;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.price
+{
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-left: 20px;
+  text-align: left;
+}
+.thumbnail
+{
+  border: 1px solid black ;
+  box-shadow: 5px 6px #808080 ;
+}
+body
+{
+  background-image: url('assets/images/logo.png');
+}
+.btn btn-success pull-right
+{
+  color: blue;
+  border-radius: 12px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+}

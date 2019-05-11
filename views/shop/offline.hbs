@@ -1,0 +1,67 @@
+<link rel="icon" type="image/png" href="signup/images/icons/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="signup/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="signup/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="signup/fonts/iconic/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" type="text/css" href="signup/vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="signup/vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="signup/vendor/animsition/css/animsition.min.css">
+<link rel="stylesheet" type="text/css" href="signup/vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="signup/vendor/daterangepicker/daterangepicker.css">
+<link rel="stylesheet" type="text/css" href="signup/css/util.css">
+<link rel="stylesheet" type="text/css" href="signup/css/main.css">
+
+<div class="limiter">
+		<div class="container-login100" style="background-image: url('login/images/offline1.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form" method="post" action="/offline" id="offline-form">
+					<span class="login100-form-title p-b-49">
+						 OFFLINE PAYMENT
+					</span>
+     <center><strong><h4>Total:  INR {{total}}</h4></strong></center>   
+        <div id="charge-error" class="alert alert-danger {{#if noError}}hidden{{/if}}">
+            {{errMsg}}
+        </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="name" class="label-input100">Name</label>
+                        <input class="input100" type="text" id="name" class="form-control" required name="name" placeholder="Type your Name">
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="address" class="label-input100">Address</label>
+                        <input class="input100" type="text" id="address" class="form-control" required name="address" placeholder="Type your Address">
+                    </div>
+                </div>
+                <hr>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="order-id" class="label-input100">Order ID</label>
+                        <input class="input100" type="text" id="order-id" class="form-control" required placeholder="Type your Order ID">
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="phone-number" class="label-input100">Phone Number</label>
+                        <input class="input100" type="text" id="phone-number" class="form-control" required placeholder="Type your Phone Number">
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="call-time" class="label-input100">Call me between</label>
+                        <input class="input100" type="text" id="call-time" class="form-control" required placeholder="Type your free time">
+                    </div>
+                </div>
+            </div>
+
+     <center><button type="submit" class="btn btn-success">Buy Now</button></center>       
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div id="dropDownSelect1"></div>
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="javascripts/offline.js"></script>

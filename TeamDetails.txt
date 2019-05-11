@@ -1,0 +1,21 @@
+			--------------------------------------------
+			|	     PAYMENT VALIDATION            |
+			|      USING NODEJS/Express AND MONGO DB   |
+			--------------------------------------------
+
+****************************************************************************************
+This is a NodeJS/Express Project developed in Web Technology Course by the students of
+KLE Technological University, Hubblli for following Transil Technologies Pvt. Ltd problem statement.
+****************************************************************************************
+
+			********* TSL 4.0 Payment Validation ***********
+Designing a page that will manage payment module which contains the order summary,
+directs the user to payment gateway which can be online as well as offline. 
+Creation of dummy payment gateway which sends a confirmation message of payment.  
+Once when the payment is confirmed, vendor will update the required fields into the database and implementing the complete system.
+
+
+			***************** TEAM DETAILS *****************
+Sl.No	      Name		    USN		        Email-ID
+1)	Apoorva D. Prabhu	01FE16BCS039	apoorvaprabhu1998@gmail.com
+2)	Arpita Kulkarni		01FE16BCS045	arpitaskulkarni@gmail.com
